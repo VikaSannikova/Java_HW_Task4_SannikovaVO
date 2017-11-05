@@ -119,5 +119,49 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
         return (E[])result;
     }
 
-    
+    @Override
+    public String toString(){
+        String result = "";
+        for (Node<E> node = first; node != null; node = node.getNextNode()) {
+            result+= node.getNextNode()+"->";
+        }
+        return result;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new MyLinkedListIterator();
+    }
+
+    private class MyLinkedListIterator implements Iterator<E> {
+        private Node<E> current;
+        private Node<E> next;
+
+        public MyLinkedListIterator() {
+            this.current = first;
+            this.next = first.getNextNode();
+        }
+
+        @Override
+        public void remove() {
+            Node<E> node = first;
+            for(node = first;node != null; node = node.getNextNode()){
+                if (node.getNextNode()==current) break; //exception ?
+            }
+            node.setNextNode(next);
+        }
+
+        public boolean hasNext() {
+            return next != null;
+        }
+
+        public E next() {
+            if (!hasNext())
+                throw new NoSuchElementException();
+            current = next;
+            next = current.getNextNode();
+            return current.getElement();
+        }
+
+    }
 }
