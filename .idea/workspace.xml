@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5409b0e-0920-4756-ad74-a38ff484f9e5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compare_collections/Compare.java" afterPath="$PROJECT_DIR$/src/compare_collections/Compare.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/list/Main.java" afterPath="$PROJECT_DIR$/src/list/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/list/Node.java" afterPath="$PROJECT_DIR$/src/list/Node.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,15 +18,16 @@
       <file leaf-file-name="Compare.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/compare_collections/Compare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="250">
+              <caret line="127" column="36" lean-forward="false" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
               <folding>
+                <element signature="method#compareLists#0;class#Compare#0" expanded="false" />
                 <element signature="e#160#169#0" expanded="true" />
                 <element signature="e#222#231#0" expanded="true" />
                 <element signature="method#compareSets#0;class#Compare#0" expanded="false" />
-                <element signature="e#2337#2346#0" expanded="true" />
-                <element signature="e#2400#2409#0" expanded="true" />
-                <element signature="e#2455#2464#0" expanded="true" />
+                <element signature="e#2338#2347#0" expanded="true" />
+                <element signature="e#2401#2410#0" expanded="true" />
+                <element signature="e#2456#2465#0" expanded="true" />
                 <element signature="method#compareMaps#0;class#Compare#0" expanded="false" />
               </folding>
             </state>
@@ -56,13 +57,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/list/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1475">
-              <caret line="71" column="39" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="74" selection-end-column="68" />
+            <state relative-caret-position="300">
+              <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#237#0" expanded="true" />
                 <element signature="e#285#294#0" expanded="true" />
-                <element signature="e#2944#2953#0" expanded="true" />
+                <element signature="e#2946#2955#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,9 +102,9 @@
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_task6-2.zip/task6/src/linkedlist/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/list/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/list/Node.java" />
-        <option value="$PROJECT_DIR$/src/list/Main.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_task6-2.zip/task6/src/comparing/MainClass.java" />
         <option value="$PROJECT_DIR$/src/compare_collections/Main.java" />
+        <option value="$PROJECT_DIR$/src/list/Main.java" />
         <option value="$PROJECT_DIR$/src/compare_collections/Compare.java" />
       </list>
     </option>
@@ -315,7 +316,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5148402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -439,19 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/list/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="71" column="39" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="74" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#228#237#0" expanded="true" />
-            <element signature="e#285#294#0" expanded="true" />
-            <element signature="e#2944#2953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp2_task6-2.zip/task6/src/comparing/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -468,17 +456,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/list/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#228#237#0" expanded="true" />
+            <element signature="e#285#294#0" expanded="true" />
+            <element signature="e#2946#2955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/compare_collections/Compare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="250">
+          <caret line="127" column="36" lean-forward="false" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
           <folding>
+            <element signature="method#compareLists#0;class#Compare#0" expanded="false" />
             <element signature="e#160#169#0" expanded="true" />
             <element signature="e#222#231#0" expanded="true" />
             <element signature="method#compareSets#0;class#Compare#0" expanded="false" />
-            <element signature="e#2337#2346#0" expanded="true" />
-            <element signature="e#2400#2409#0" expanded="true" />
-            <element signature="e#2455#2464#0" expanded="true" />
+            <element signature="e#2338#2347#0" expanded="true" />
+            <element signature="e#2401#2410#0" expanded="true" />
+            <element signature="e#2456#2465#0" expanded="true" />
             <element signature="method#compareMaps#0;class#Compare#0" expanded="false" />
           </folding>
         </state>

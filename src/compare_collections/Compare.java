@@ -9,7 +9,7 @@ public class Compare
         List<Integer> linkedList = new LinkedList<Integer>();
 
         int tmp = 0;
-        for(int i = 0; i < 1000; i++) {
+        for(int i = 0; i < 10000; i++) {
             tmp = (int)Math.random()*100;
             arrayList.add(tmp);
             linkedList.add(tmp);
@@ -67,7 +67,7 @@ public class Compare
         Set<Integer> linkedSet = new LinkedHashSet<Integer>();
         Set<Integer> treeSet = new TreeSet<Integer>();
         int tmp = 0;
-        for(int i = 0; i <1000; i++) {
+        for(int i = 0; i <10000; i++) {
             tmp = (int)Math.random()*100;
             hashSet.add(tmp);
             linkedSet.add(tmp);
@@ -131,7 +131,7 @@ public class Compare
         Map<Integer, Double> treeMap = new TreeMap<Integer, Double>();
         int tmp = 0;
         double db = 0;
-        for(int i = 0; i < 1000; i++) {
+        for(int i = 0; i < 10000; i++) {
             tmp = (int)Math.random()*100;
             db = Math.random()*150;
             hashMap.put(tmp, db );

@@ -10,7 +10,7 @@ public class Main {
          MyLinkedList<Integer> myList = new MyLinkedList<Integer>();
          List<Integer> list = new LinkedList<Integer>();
          int tmp = 0;
-         for(int i = 0; i < 100; i++) {
+         for(int i = 0; i < 10000; i++) {
              tmp = (int)(Math.random() * 100);
              list.add(tmp);
              myList.add(tmp);
