@@ -7,8 +7,8 @@ import java.util.Random;
 
 public class Main {
     public static void compare(){
-         MyLinkedList<Integer> myList = new MyLinkedList<>();
-         List<Integer> list = new LinkedList<>();
+         MyLinkedList<Integer> myList = new MyLinkedList<Integer>();
+         List<Integer> list = new LinkedList<Integer>();
          int tmp = 0;
          for(int i = 0; i < 100; i++) {
              tmp = (int)(Math.random() * 100);
@@ -76,7 +76,7 @@ public class Main {
      }
 
     public static void main(String[] args) {
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        MyLinkedList<Integer> list = new MyLinkedList<Integer>();
         int value = 0;
         list.add(1);
         //System.out.println(list.toString());
