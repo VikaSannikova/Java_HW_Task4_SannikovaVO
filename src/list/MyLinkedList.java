@@ -2,14 +2,14 @@ package list;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public abstract class MyLinkedList<E> implements ILinkedList<E>{
+public class MyLinkedList<E> implements ILinkedList<E>{
     public Node<E> first;
     public Node<E> last;
     public int length=0;
 
     public MyLinkedList() {
         first = new Node<E>(null);
-        first = last;
+        last = first;
     }
     private Node<E> getNode(int index) {
         Node<E> tmp = first;
@@ -22,7 +22,7 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
     public void add(E element){
         if (length == 0){
             first = new Node<E>(element);
-            first = last;
+            last = first;
             length++;
         }
         else{
@@ -34,7 +34,7 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
 
     @Override
     public void add(int index, E element){
-        if (index==0)
+        //if (index==0)
         if (index==length) add(element);
         else{
             Node<E>tmp = first;
@@ -43,9 +43,15 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
                 prev = tmp;
                 tmp=tmp.getNextNode();
             }
+            if(index == 0){
+                Node<E> newNode = new Node<E>(element,tmp); //устанавливаем хвост "следующим"
+                first = newNode;
+            }
+            else{
             Node<E> newNode = new Node<E>(element,tmp); //устанавливаем хвост "следующим"
             prev.setNextNode(newNode);
             if (index==0) first = newNode;
+            }
             length++;
         }
     }
@@ -73,8 +79,10 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
     public int indexOf(E element) {
         int i = 0;
         for (Node<E> tmp = first; tmp != null; tmp = tmp.getNextNode()) {
-            if(tmp.getElement() == element) return i;
-                i++;
+            if(tmp.getElement().equals(element)){
+                return i;
+            }
+            i++;
         }
         return -1;
     }
@@ -88,10 +96,12 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
             first.setElement(null);
             first = tmp;
         }
-        Node<E> prev = getNode(index-1);
-        value = prev.getNextNode().getElement();
-        prev.setNextNode(prev.getNextNode().getNextNode());
-        prev.setNextNode(null);
+        else{
+            Node<E> prev = getNode(index-1);
+            value = prev.getNextNode().getElement();
+            prev.setNextNode(prev.getNextNode().getNextNode());
+            //prev.setNextNode(null);
+        }
         length--;
         return value;
     }
@@ -115,6 +125,7 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
         int i = 0;
         for (Node<E> node = first; node != null; node = node.getNextNode()) {
             result[i] = node.getElement();
+            i++;
         }
         return (E[])result;
     }
@@ -123,7 +134,10 @@ public abstract class MyLinkedList<E> implements ILinkedList<E>{
     public String toString(){
         String result = "";
         for (Node<E> node = first; node != null; node = node.getNextNode()) {
-            result+= node.getNextNode()+"->";
+            if (node==last)result+= node.getElement();
+            else {
+                result += node.getElement() + "->";
+            }
         }
         return result;
     }
