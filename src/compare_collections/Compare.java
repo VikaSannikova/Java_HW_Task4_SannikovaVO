@@ -69,17 +69,12 @@ public class Compare
     }
 
     public static void compareMaps(Map<Integer,Double>map){
-        /*Map<Integer, Double> hashMap = new HashMap<Integer, Double>();
-        Map<Integer, Double> linkedHashMap = new LinkedHashMap<Integer, Double>();
-        Map<Integer, Double> treeMap = new TreeMap<Integer, Double>();*/
         int tmp = 0;
         double db = 0;
         for(int i = 0; i < 10000; i++) {
             tmp = (int)Math.random()*100;
             db = Math.random()*150;
             map.put(tmp, db );
-/*            linkedHashMap.put(tmp, db);
-            treeMap.put(tmp, db);*/
         }
 
         long startTime, estimatedTime;
@@ -88,32 +83,12 @@ public class Compare
         estimatedTime = System.nanoTime() - startTime;
         System.out.println("put in "+map.getClass().getName()+": " + estimatedTime);
 
-        /*startTime = System.nanoTime();
-        linkedHashMap.put(47, 9.0);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("put in linkedHashMap: " + estimatedTime);
-
-        startTime = System.nanoTime();
-        treeMap.put(47, 9.0);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("put in treeMap: " + estimatedTime);*/
-
         ////////////////////////////////////////////////////////
 
         startTime = System.nanoTime();
         map.containsValue(9.0);
         estimatedTime = System.nanoTime() - startTime;
         System.out.println("check "+map.getClass().getName()+": " + estimatedTime);
-
-        /*startTime = System.nanoTime();
-        linkedHashMap.containsValue(9.0);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("check linkedHashMap: " + estimatedTime);
-
-        startTime = System.nanoTime();
-        treeMap.containsValue(9.0);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("check treeMap: " + estimatedTime);*/
 
         ////////////////////////////////////////////////////////
 
@@ -122,14 +97,5 @@ public class Compare
         estimatedTime = System.nanoTime() - startTime;
         System.out.println("remove from "+map.getClass().getName()+": " + estimatedTime);
 
-        /*startTime = System.nanoTime();
-        linkedHashMap.remove(47);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("remove from linkedHashMap: " + estimatedTime);
-
-        startTime = System.nanoTime();
-        treeMap.remove(47);
-        estimatedTime = System.nanoTime() - startTime;
-        System.out.println("remove from treeMap: " + estimatedTime);*/
     }
 }

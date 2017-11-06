@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5409b0e-0920-4756-ad74-a38ff484f9e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compare_collections/Compare.java" afterPath="$PROJECT_DIR$/src/compare_collections/Compare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compare_collections/Main.java" afterPath="$PROJECT_DIR$/src/compare_collections/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,23 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Compare.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Compare.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/compare_collections/Compare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="122" column="67" lean-forward="true" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
+            <state relative-caret-position="48">
+              <caret line="70" column="59" lean-forward="false" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#compareLists#0;class#Compare#0" expanded="false" />
                 <element signature="method#compareSets#0;class#Compare#0" expanded="false" />
-                <marker date="1509987397501" expanded="false" signature="2573:2590" ph="&lt;~&gt;" />
-                <marker date="1509987397501" expanded="false" signature="2644:2661" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/compare_collections/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -81,8 +77,8 @@
         <option value="$PROJECT_DIR$/src/test/InterfaceTest.java" />
         <option value="$PROJECT_DIR$/src/test/Cat.java" />
         <option value="$PROJECT_DIR$/src/test/Main.java" />
-        <option value="$PROJECT_DIR$/src/compare_collections/Compare.java" />
         <option value="$PROJECT_DIR$/src/compare_collections/Main.java" />
+        <option value="$PROJECT_DIR$/src/compare_collections/Compare.java" />
       </list>
     </option>
   </component>
@@ -447,25 +443,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/compare_collections/Compare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="122" column="67" lean-forward="true" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#compareLists#0;class#Compare#0" expanded="false" />
-            <element signature="method#compareSets#0;class#Compare#0" expanded="false" />
-            <marker date="1509987397501" expanded="false" signature="2573:2590" ph="&lt;~&gt;" />
-            <marker date="1509987397501" expanded="false" signature="2644:2661" ph="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/compare_collections/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compare_collections/Compare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="70" column="59" lean-forward="false" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#compareLists#0;class#Compare#0" expanded="false" />
+            <element signature="method#compareSets#0;class#Compare#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
